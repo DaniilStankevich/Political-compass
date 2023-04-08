@@ -97,8 +97,6 @@ function showResult(){
 	let maxFreq = 0;
 
 
-	console.log(allOptions, all)
-
 
 	for ( let i = 0; i < allOptions.length; i++) {
 		const current = allOptions[i]                  
@@ -120,7 +118,7 @@ function showResult(){
 
 	headerContainer.innerHTML = reaultTemplate;	
 	submitBtn.innerText = 'Начать заново'
-	global.classList.add('general', maxFreqStr)
+	global.classList.add(maxFreqStr)
 	submitBtn.onclick = () =>( Restart(maxFreqStr) )
 
 	//Как aльтернатива - submitBtn.onclick = "() =>( history.go () )"
